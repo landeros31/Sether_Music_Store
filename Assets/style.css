@@ -8,10 +8,20 @@
 }
 /*/////////////////Header///////////////////////////////////////*/
 header{
-  background-color: #Db1717;
+  background-color: black;
+  
   width: 100%;
   height: 45vh;
   
+}
+.pruebaimg {
+  background-image: url('./img/instrumentos\ 1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+width: 100%;
+height: 100%;
 }
 .logo{
   height: 80%;
@@ -19,9 +29,11 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .container-tittle{
   margin-top: 50px;
+ 
 }
 .tittle-first h1{
   
@@ -30,7 +42,9 @@ header{
   font-weight: normal;
   font-size: 9.5rem;
   line-height: 80px;
-  color: #000000; 
+  color: #e3e4e5; 
+  
+  
 }
 .tittle-second{
  text-align: right;
@@ -41,7 +55,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 3rem;
 line-height: 40px;
-color: #FFFFFF;
+color: goldenrod;
 
 }
 #nav-select{
@@ -59,7 +73,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 2.2rem;
 line-height: 3vh;
-color: #FFFFFF;
+color: white;
 list-style: none;
 }
 /*/////////////////seccion 1 interactive///////////////////////////////////////*/
@@ -75,13 +89,14 @@ list-style: none;
   border: 2px solid black;
   width: 90%;
   height: 75%;
+  overflow: hidden;
 }
 .container-new-product{
   display: flex;
 }
 .new{
   width: 30%;
-background-color: #Db1717;
+background-color: #8b0000;
 text-align: center;
 }
 .new h3{
@@ -94,10 +109,11 @@ text-align: center;
   
 }
 .product{
-  width: 85%;
-background-color: black;
+  width: 70%;
+  background-color: rgb(0, 0,0,0.8);
 color:white;
-text-align: justify;
+text-align: center;
+
 }
 .product h3{
   font-family: Marck Script;
@@ -122,7 +138,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 2.8rem;
 line-height: 50px;
-color: #000000;
+color: #252850;
 margin-left: 8%;
 
 }
@@ -133,10 +149,8 @@ justify-content: space-around;
 margin-right: 7%;
 }
 #mode li{
-  font-family: Marck Script;
-font-style: normal;
-font-weight: normal;
-font-size: 1.6rem;
+  
+font-size: 1.5rem;
 line-height: 50px;
 color: #000000;
 list-style: none;
@@ -150,30 +164,23 @@ line-height: 50px;
 color: #000000;
 list-style: none;
 }
-#mode .active{
-  font-family: Marck Script;
-font-style: normal;
-font-weight: normal;
-font-size: 2rem;
-line-height: 50px;
-color: #Db1717;
-list-style: none;
-}
+
 .gif {
-  
+  opacity: 0.9;
   background-image: url('https://media.giphy.com/media/9SINvGfhqxDhtKmYvX/giphy.gif');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 80%;
-  overflow: hidden;
+  
+  
   
 }
 /*/////////////Sub-titulos top ///////////////////////////////////////*/
 
 .sub-tittles{
-  background-color: #Db1717;
+  background-color: #8b0000;
   width: 100%;
   height: 12.8vh;
   
@@ -191,7 +198,7 @@ margin-left: 3%;
 
 
 }
-/*/////////////Sub-titulos top ///////////////////////////////////////*/
+/*///////////// top products ///////////////////////////////////////*/
 
 .top-products{
   width: 100%;
@@ -213,4 +220,366 @@ margin-left: 3%;
 .container-slider img{
 width: 100%;
 height: 100%;
+}
+/*///////////// intruments///////////////////////////////////////*/
+#instruments{
+  width: 100%;
+  height: 87.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-big-instruments{
+ 
+  width: 96%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.separete-instruments{
+  
+  width: 23%;
+  height: 100%;
+}
+.container-small-instruments{
+  border: 1px solid black;
+  width: 100%;
+  margin-bottom: 10%;
+  height: 45%;
+
+}
+.tittle-instrument{
+  background-color: rgb(0, 0,0,0.8);
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tittle-instrument h3{
+  font-family: Marck Script;
+font-style: normal;
+font-weight: normal;
+font-size: 2rem;
+line-height: 12.8vh;
+color: #e3e4e5;
+
+}
+.instrument-img {
+  width: 100%;
+  height: 80%;
+  
+  overflow: hidden;
+}
+.instrument-img img{
+  width: 100%;
+  height: 100%;
+}
+/*///////////// intruments///////////////////////////////////////*/
+#services{
+width: 100%;
+height: 87.2vh;
+display:flex;
+justify-content: space-around;
+}
+.service1,.service2,.service3{
+margin-top: 30px;
+width: 30%;
+height: 87%;
+display: flex;
+align-items: center;
+flex-direction: column;
+border: 2px solid #252850;
+}
+.service1 h4,.service2 h4,.service3 h4{
+  font-family: Marck Script;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 25px;
+  font-size: 3.2rem;
+  line-height: 50px;
+  
+  color: #000000;
+}
+.service1-1,.service2-1 ,.service3-1 {
+  
+  width: 90%;
+  height: 40%;
+  margin-top:15px;
+  border: 1px solid #8b0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service1 p,.service2 p ,.service3 p {
+  
+  margin-top: 40px;
+  width: 90%;
+  height: auto;
+
+}
+/*///////////// payment methods///////////////////////////////////////*/
+.payment-methods{
+  background-color: #8b0000;
+  width: 100%;
+  height: 40.2vh;
+  
+}
+
+.tittle-payment h2{
+font-family: Marck Script;
+font-style: normal;
+font-weight: normal;
+font-size: 2.5rem;
+line-height: 50px;
+color: #FFFFFF;
+margin-left: 3%;
+
+ }
+.methods{
+
+width: 100%;
+height: 30vh;
+display: flex;
+
+}
+.cards{
+  width:40%;
+
+margin-left: 10%;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.cards h3{
+  font-family: Marck Script;
+font-style: normal;
+font-weight: normal;
+font-size: 2rem;
+line-height: 75px;
+color: #FFFFFF;
+}
+.icons-cards{
+  
+ width:60%;
+ height: 50%;
+}
+.container-icons,.container-icons2{
+
+width: 100%;
+height: 50%;
+display: flex;
+margin-bottom: 3px;
+
+}
+
+.c-card{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.cash{
+width:40%;
+
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+text-align: center;
+
+}
+.cash h3{
+  font-family: Marck Script;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 75px;
+  color: #FFFFFF;
+  
+  width: 47%;
+  
+  
+}
+.container-icons3{
+  
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  
+}
+.c-cash1{
+  
+  width: 100%;
+  height: 50%;
+  margin-right: 8%;
+  
+  
+}
+.c-cash1 img{
+  width: 100%;
+  height: 100%;
+  
+}
+/*///////////////////////marcas////////////////////*/
+#marcas{
+ 
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tittle-marcas{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.tittle-marcas h1{
+font-family: Marck Script;
+font-style: normal;
+font-weight: normal;
+font-size: 3rem;
+line-height: 100px;
+color: #000000;
+}
+
+.separete{
+  
+  width: 70%;
+  height: 70%;
+}
+.marcas1{
+  
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.container-logo{
+ 
+  width: 50%;
+  height: 100%;
+}
+.container-logo img{
+  
+  width: 80%;
+  height: 80%;
+}
+/*///////////////////////footer////////////////////*/
+footer{
+  background-color: black;
+  background-image: url('./img/TX7554\ 1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 38.4vh;
+}
+.separate-footer{
+  
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.container-logo-footer{
+  margin-left: 5%;
+  height: 80%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contacts{
+ 
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.tittle1-footer h2{
+  font-family: Marck Script;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5rem;
+  line-height: 40px;
+  
+  color: #e3e4e5;
+}
+
+.tittle2-footer{
+ 
+ width: 100%;
+ display: flex;
+ justify-content: flex-end;
+}
+.tittle2-footer h3{
+  font-family: Marck Script;
+font-style: normal;
+font-weight: normal;
+font-size: 1.8rem;
+line-height: 20px;
+color: goldenrod;
+}
+
+.whatsapp{
+  width: 100%;
+  display:flex;
+  
+  margin-left: 25%;
+}
+.email{
+  width: 100%;
+  display: flex;
+  font-size: 40px;
+  margin-left: 25%;
+}
+.email i,.whatsapp i{
+ color: #e3e4e5;
+  margin-right: 4%;
+  font-size: 40px;
+}
+.email p,.whatsapp p{
+  color: goldenrod;
+  font-size: 30px;
+   
+ }
+.designed{
+ 
+  height: 20%;
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.container-logo-sebastian{
+
+width: 7%;
+height: 70%;
+margin-right: 3%;
+
+}
+.container-logo-sebastian img{
+  
+  width: 100%;
+  height: 100%;
+  }
+
+.name-designed{
+  font-family: Marck Script;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.7rem;
+  line-height: 50px;
+
+  color: #FFFFFF;
 }
