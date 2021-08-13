@@ -108,3 +108,109 @@ text-align: justify;
   color: #FFFFFF;
   margin-left: 10%;
 }
+.container-test{
+ 
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.container-test h4{
+
+width: 20%;
+font-family: Marck Script;
+font-style: normal;
+font-weight: normal;
+font-size: 2.8rem;
+line-height: 50px;
+color: #000000;
+margin-left: 8%;
+
+}
+#mode{
+  width: 50%;
+display: flex;
+justify-content: space-around;
+margin-right: 7%;
+}
+#mode li{
+  font-family: Marck Script;
+font-style: normal;
+font-weight: normal;
+font-size: 1.6rem;
+line-height: 50px;
+color: #000000;
+list-style: none;
+}
+#mode .li-mod{
+  font-family: Marck Script;
+font-style: normal;
+font-weight: normal;
+font-size: 2rem;
+line-height: 50px;
+color: #000000;
+list-style: none;
+}
+#mode .active{
+  font-family: Marck Script;
+font-style: normal;
+font-weight: normal;
+font-size: 2rem;
+line-height: 50px;
+color: #Db1717;
+list-style: none;
+}
+.gif {
+  
+  background-image: url('https://media.giphy.com/media/9SINvGfhqxDhtKmYvX/giphy.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  
+}
+/*/////////////Sub-titulos top ///////////////////////////////////////*/
+
+.sub-tittles{
+  background-color: #Db1717;
+  width: 100%;
+  height: 12.8vh;
+  
+  
+}
+.sub-tittles h5{
+
+font-family: Marck Script;
+font-style: normal;
+font-weight: normal;
+font-size: 2.5rem;
+line-height: 12.8vh;
+color: #FFFFFF;
+margin-left: 3%;
+
+
+}
+/*/////////////Sub-titulos top ///////////////////////////////////////*/
+
+.top-products{
+  width: 100%;
+  height: 87.2vh;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-slider{
+  border : 2px solid black;
+  width: 70%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container-slider img{
+width: 100%;
+height: 100%;
+}
