@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./Assets/style.css">
   <script src="https://kit.fontawesome.com/513d879ab2.js" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <title>Sether Music Store</title>
 </head>
-<body>
+<body id="body">
   <!-- inicio de header--------------------------------- -->
-      <header>
+      <header >
       <div class="pruebaimg">
        
         <div class="logo">
@@ -26,10 +26,10 @@
         </div>
         <nav>
         <ul id="nav-select">
-          <li>New Product</li>
-          <li>Instruments</li>
-          <li>Services</li>
-          <li>Contact us</li>
+          <li> <a href="#interactive">New Product</a></li>
+          <li> <a href="#instruments">Instruments</a></li>
+          <li> <a href="#services">Services</a></li>
+          <li> <a href="#footer">Contact us</a></li>
         </ul>
         </nav>
       </div>
@@ -50,8 +50,39 @@
               </ul>
             </div>
             <div id="gif" >
-               
+              <div class="container-piano">
+                <ul id="set">
+                  <h2>yamaha</h2>
+                <li id="pr" onclick=" jsNota(261.626)" class="white e"></li>
+                <li  onclick=" jsNota(277.183)" class="black ds"></li>
+                <li  onclick=" jsNota(293.665)" class="white d"></li>
+                <li  onclick=" jsNota(311.127)" class="black cs"></li>
+                <li  onclick=" jsNota(329.628) "class="white c"></li>
+                <li   onclick=" jsNota(174.614)"  class="white b"></li>
+                <li  onclick=" jsNota(184.997)" class="black as"></li>
+                <li  onclick=" jsNota(195.998)" class="white a"></li>
+                <li  onclick=" jsNota(207.652)" class="black gs"></li>
+                <li  onclick=" jsNota(220.000)" class="white g"></li>
+                <li  onclick=" jsNota(233.082)" class="black fs"></li>
+                <li  onclick=" jsNota(246.942)" class="white f"></li>
+
+                <li id="pr" onclick=" jsNota(261.626)" class="white e"></li>
+                <li id="pr" onclick=" jsNota(277.183)" class="black ds"></li>
+                <li id="pr" onclick=" jsNota(293.665)" class="white d"></li>
+                <li id="pr" onclick=" jsNota(311.127)" class="black cs"></li>
+                <li id="pr" onclick=" jsNota(329.628) "class="white c"></li>
+                <li id="pr"  onclick=" jsNota(174.614)"  class="white b"></li>
+                <li id="pr" onclick=" jsNota(184.997)" class="black as"></li>
+                <li id="pr" onclick=" jsNota(195.998)" class="white a"></li>
+                <li id="pr" onclick=" jsNota(207.652)" class="black gs"></li>
+                <li id="pr" onclick=" jsNota(220.000)" class="white g"></li>
+                <li id="pr" onclick=" jsNota(233.082)" class="black fs"></li>
+                <li id="pr" onclick=" jsNota(246.942)" class="white f"></li>
+              </ul>
+              
             </div>
+            </div>
+            
         </div>
       </section>
       <!-- inicio de subtitulo 1 ----------------------- -->
@@ -61,7 +92,12 @@
       <!-- inicio de seccion2- o top products--------------------------- -->
       <section id="top-products">
          <div class="container-slider">
-           <img src="./Assets/img/Component 4 .png" alt="slider">
+           <ul id="slider-ul">
+             <li><img src="./Assets/img/Component 4 .png" alt="slider1"></li>
+             <li><img src="./Assets/img/banner2.jpg" alt="slider2"></li>
+             <li><img src="./Assets/img/banner3.png" alt="slider3"></li>
+           </ul>
+           
          </div>
       </section>
       <!-- inicio de subtitulo 2 ----------------------- -->
@@ -128,19 +164,21 @@
             <div class="service1">
               <h4>Conciert</h4>
               <div class='service1-1' id="service1"></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reprehenderit quis ipsum, delectus, cupiditate laudantium corporis explicabo repudiandae, nisi laborum doloremque! Minus sequi est optio sint dolorem porro repellendus nihil!</p>
+              <p>We have the best and most current music groups nationwide and a wide catalog of performances to give you the best service and advice in your hiring of shows. festivals often cover a wide spectrum of music and the arts such as open air festivals. </p>
             </div>
             <div class="service2">
               <h4>Academy</h4>
               <div class="service2-1" id="service2"></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reprehenderit quis ipsum, delectus, cupiditate laudantium corporis explicabo repudiandae, nisi laborum doloremque! Minus sequi est optio sint dolorem porro repellendus nihil!</p>
+              <p>ready to take the next step on your musical journey?
+                get inspired by the latest music from academy students and staff. find out more about our courses and how to apply</p>
           </div>
         </div>
         <div class="separate-service2">
          <div class="service3">
           <h4>Producer</h4>
           <div class="service3-1" id="service3"></div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reprehenderit quis ipsum, delectus, cupiditate laudantium corporis explicabo repudiandae, nisi laborum doloremque! Minus sequi est optio sint dolorem porro repellendus nihil!</p>
+          <p>
+            We carry out each one of the steps of the production of a disc, from the arrangements, musical direction, selection of session musicians, recording, editing, mixing, Mastering, duplication of dis</p>
        </div> 
       </div>
       </section>
@@ -193,8 +231,8 @@
        </div>
     </section>
       <!-- inicio de footer--------------------------------- -->
-      <footer>
-        <div class="separate-footer">
+      <footer id="footer">
+        <div class="separate-footer" id="separate-footer">
           <div class="container-logo-footer"> 
               <div class="tittle1-footer">
                 <h2>Sether</h2>
@@ -217,7 +255,7 @@
           <div class="container-logo-sebastian">
           <img src="./Assets/img/Component 2.png" alt="logo sebastian">
         </div >
-           <p class="name-designed">designed by Sebastian Landeros</p>
+           <p class="name-designed">Copyright © 2021 Sebastian Landeros</p>
         </div>
       </footer>
       

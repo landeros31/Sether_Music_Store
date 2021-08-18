@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 
 *{
@@ -6,6 +5,7 @@
   border: 0;
   padding: 0;
 }
+
 /*/////////////////Header///////////////////////////////////////*/
 header{
   background-color: black;
@@ -66,7 +66,7 @@ color: goldenrod;
   
   display: inline-flex;
 }
-#nav-select li{
+#nav-select li {
   font-family: Marck Script;
   
 font-style: normal;
@@ -75,6 +75,10 @@ font-size: 2.2rem;
 line-height: 3vh;
 color: white;
 list-style: none;
+}
+#nav-select li a {
+  text-decoration: none;
+  color: white;
 }
 /*/////////////////seccion 1 interactive///////////////////////////////////////*/
 #interactive{
@@ -167,16 +171,96 @@ list-style: none;
 
 #gif {
   opacity: 0.9;
-  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 80%;
-  
-  
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   
 }
+/*///piano///*/
+.container-piano{
+  height: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  
+  
+
+}
+#set {
+  height:10em;
+  width:42em;
+  position:relative;
+  border:1px solid #160801;
+  border-radius:1em;
+  background:#2c3235;
+  text-align: center;
+}
+#set h2{
+  color:white ;
+}
+li {
+top: 0px;
+margin:0;
+padding:0;
+list-style:none;
+position:relative;
+float:left
+}
+
+#set .white {
+height:7.9em;
+width:3.45em;
+z-index:1;
+border-left:1px solid #bbb;
+border-bottom:1px solid #bbb;
+border-radius:0 0 5px 5px;
+box-shadow:-1px 0 0 rgba(255,255,255,0.8) inset,0 0 5px #ccc inset,0 0 3px rgba(0,0,0,0.2);
+background:linear-gradient(to bottom,#eee 0%,#fff 100%)
+}
+
+#set .white:active {
+border-top:1px solid #777;
+border-left:1px solid #999;
+border-bottom:1px solid #999;
+box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+background:linear-gradient(to bottom,#fff 0%,#e9e9e9 100%)
+}
+
+.black {
+height:4em;
+width:1.1em;
+margin:0 0 0 -1em;
+z-index:2;
+border:1px solid #000;
+border-radius:0 0 3px 3px;
+box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -5px 2px 3px rgba(0,0,0,0.6) inset,0 2px 4px rgba(0,0,0,0.5);
+background:linear-gradient(45deg,#222 0%,#555 100%)
+}
+
+.black:active {
+box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
+background:linear-gradient(to right,#444 0%,#222 100%)
+}
+
+.a,.g,.f,.d,.c {
+margin:0 0 0 -1em
+}
+
+#set li:first-child {
+border-radius:5px 0 5px 5px
+}
+
+#set li:last-child {
+border-radius:0 5px 5px 5px
+}
+
+/*/// fin de piano///*/
+            
 /*/////////////Sub-titulos top ///////////////////////////////////////*/
 
 #sub-tittles{
@@ -199,7 +283,6 @@ margin-left: 3%;
 
 }
 /*///////////// top products ///////////////////////////////////////*/
-
 #top-products{
   width: 100%;
   height: 87.2vh;
@@ -212,14 +295,35 @@ margin-left: 3%;
   border : 2px solid black;
   width: 70%;
   height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
-.container-slider img{
+#slider-ul{
+  background-color: aqua;
+display: flex;
+width: 300%;
+height: 100%;
+animation: move 10s infinite alternate;
+}
+.container-slider ul li{
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+.container-slider ul li img{
 width: 100%;
 height: 100%;
+}
+
+@keyframes move {
+
+  0% {margin-left: 0;}
+  33% {margin-left: 0;}
+
+  40% {margin-left: -100%;}
+  77% {margin-left: -100%;}
+
+  84% {margin-left: -200%;}
+  100% {margin-left: -200%;}
 }
 /*///////////// intruments///////////////////////////////////////*/
 #instruments{
@@ -310,7 +414,7 @@ justify-content: space-around;
 .service1,.service2{
 margin-top: 30px;
 width: 40%;
-height: 90%;
+height: 80%;
 display: flex;
 align-items: center;
 flex-direction: column;
@@ -320,7 +424,7 @@ border: 2px solid #252850;
 .service3{
   margin-top: 30px;
   width: 80%;
-  height: 90%;
+  height: 80%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -615,10 +719,9 @@ margin-right: 3%;
 
 .name-designed{
   
-  font-family: Marck Script;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   line-height: 50px;
 
   color: #FFFFFF;
@@ -677,6 +780,35 @@ margin-right: 3%;
   height: 80%;
   overflow: hidden;
   }
+
+
+  /*////////////piano//////////////*/
+  #set {
+    height:11em;
+    width:20em;
+    position:relative;
+    border:1px solid #160801;
+    border-radius:1em;
+    background:#2c3235;
+    text-align: center;
+  }
+  #set h2{
+    color:white ;
+  }
+ 
+  
+  #set .white {
+  height:7.9em;
+  width:3.45em;
+ 
+  }
+  .black {
+  height:3em;
+  width:0.9em;
+  
+  }
+  
+  /*/////////fin de piano////////*/
 
   /*/////////////Sub-titulos top ///////////////////////////////////////*/
 
@@ -841,6 +973,34 @@ line-height: 55px;
   .container-interactive{
     height: 80%;
   }
+  /*////////////piano//////////////*/
+  #set {
+    height:11em;
+    width:13em;
+    position:relative;
+    border:1px solid #160801;
+    border-radius:1em;
+    background:#2c3235;
+    text-align: center;
+  }
+  #set h2{
+    color:white ;
+    font-size: 1rem;
+  }
+ 
+  
+  #set .white {
+  height:7.9em;
+  width:2.5em;
+ 
+  }
+  .black {
+  height:2em;
+  width:0.5em;
+  
+  }
+  
+  /*/////////fin de piano////////*/
 
   /*/////////////Sub-titulos top ////////////////////////////////////*/
   #sub-tittles{
@@ -909,7 +1069,7 @@ line-height: 55px;
    line-height: 40px;
  }
  .service1 p,.service2 p ,.service3 p {
- font-size: 0.9rem;
+ font-size: 1rem;
  }
 
   /*///////////// payment methods///////////////////////////////////////*/
@@ -978,7 +1138,7 @@ width: 12%;
   }
 
 .name-designed{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 30px;
   color: #FFFFFF;
 } 
@@ -1028,7 +1188,34 @@ width: 12%;
   #mode .li-mod{
   font-size: 1rem;
   }
+/*////////////piano//////////////*/
+#set {
+  height:11em;
+  width:9.8em;
+  position:relative;
+  border:1px solid #160801;
+  border-radius:1em;
+  background:#2c3235;
+  text-align: center;
+}
+#set h2{
+  color:white ;
+  font-size: 0.8rem;
+}
 
+
+#set .white {
+height:7.9em;
+width:2em;
+
+}
+.black {
+height:1.6em;
+width:0.3em;
+
+}
+
+/*/////////fin de piano////////*/
  /*/////////////Sub-titulos top ///////////////////////////////////////*/
 
   #sub-tittles{
@@ -1059,7 +1246,7 @@ width: 12%;
   width: 100%;
 }
  .service1 p,.service2 p,.service3 p{
-   font-size: 0.8rem;
+   font-size: 1rem;
  }
  .service1 h4,.service2 h4,.service3 h4{
   font-size: 1.8rem;
@@ -1121,7 +1308,8 @@ line-height: 10px;
   align-items: flex-start;
 }
 .whatsapp{
-  width: auto;
+ 
+  width: 100px;
   display: flex;
   align-items: center;
 justify-content:flex-start ;
@@ -1148,7 +1336,7 @@ height: 60%;
   height: 100%;
   }
 .name-designed{
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 30px;
   color: #FFFFFF;
 }

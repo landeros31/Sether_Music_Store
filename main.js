@@ -1,6 +1,75 @@
+//////////////piano
+var context= new AudioContext();
+ 
+function jsNota(frecuencia){
+        var o= context.createOscillator();
+        g=context.createGain();
+        o.connect(g);
+        o.type="sawtooth";
+        o.frequency.value=frecuencia;
+        g.connect(context.destination);
+        o.start(0);
+        g.gain.exponentialRampToValueAtTime(0.00001,context.currentTime +1.5);
+}
+
+//////////////////////////por teclas 
+$body =document.getElementById("body")
+
+$body.addEventListener('keydown', (e) => {
+
+  if(e.key=="a"){
+    console.log("do")
+    jsNota(261.626);
+  }
+  if(e.key=="w"){
+    console.log("do#")
+    jsNota(277.183);
+  }
+  if(e.key=="s"){
+    console.log("re")
+    jsNota(293.665);
+  }
+  if(e.key=="e"){
+    console.log("re#")
+    jsNota(293.665);
+  }
+  if(e.key=="d"){
+    console.log("mi")
+    jsNota(329.628);
+  }
+  if(e.key=="f"){
+    console.log("fa")
+    jsNota(174.614);
+  }
+  if(e.key=="t"){
+    console.log("fa#")
+    jsNota(184.997);
+  }
+  if(e.key=="g"){
+    console.log("sol")
+    jsNota(195.998);
+  }
+  if(e.key=="y"){
+    console.log("sol#")
+    jsNota(207.652);
+  }
+  if(e.key=="h"){
+    console.log("la")
+    jsNota(220.000);
+  }
+  if(e.key=="u"){
+    console.log("la#")
+    jsNota(233.082);
+  }
+  if(e.key=="j"){
+    console.log("si")
+    jsNota(246.942);
+  }
+});
+
 
 //////////////////////peticion a la API de GiPhy
-(()=>{
+function selectapi(){
 
   const xhr=new XMLHttpRequest(),
   $gif =document.getElementById("gif")
@@ -43,4 +112,5 @@
   xhr.send();
   
   
-  })();
+  };
+  selectapi();
