@@ -68,6 +68,7 @@ $body.addEventListener('keydown', (e) => {
 });
 
 
+
 //////////////////////peticion a la API de GiPhy
 function selectapi(){
 
@@ -76,6 +77,8 @@ function selectapi(){
   $service1=document.getElementById("service1")
   $service2=document.getElementById("service2")
   $service3=document.getElementById("service3")
+  $practice=document.getElementById("practice")
+  $yourself=document.getElementById("yourself")
  
   //const link ="https://media.giphy.com/media/9SINvGfhqxDhtKmYvX/giphy.gif"
   
@@ -100,6 +103,13 @@ function selectapi(){
      $service1.style.backgroundImage=`url(${datos[4]})`
      $service2.style.backgroundImage=`url(${datos[3]})`
      $service3.style.backgroundImage=`url(${datos[2]})`
+
+     $practice.addEventListener("click",()=>{
+      $gif.style.backgroundImage= `url(${datos[1]})`
+     })
+     $yourself.addEventListener("click",()=>{
+      $gif.style.backgroundImage= `url(${datos[0]})`
+     })
      
   }else{
     console.log("error")
