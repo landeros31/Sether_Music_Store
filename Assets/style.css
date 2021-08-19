@@ -1276,15 +1276,29 @@ line-height: 30px;
  }
 .methods{
 height: 15vh;
+flex-direction: column;
 }
-.cards h3{
+.cards h3{ 
 font-size: 1.2rem;
-line-height: 40px;
+line-height: 30px;
 
+}
+.cards{
+  margin-left: 0;
+  width: 100%;
+}
+.cash{
+  width: 100%;
+}
+.c-card ,.c-cash1{
+  background-color: brown;
+  display: none;
 }
 .cash h3{
   font-size: 1.2rem;
-  line-height: 55px;
+  line-height: 40px;
+  text-align: end;
+  margin-left: 20px;
 }
  /*///////////////////////marcas////////////////////*/
  
